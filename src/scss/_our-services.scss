@@ -1,0 +1,27 @@
+.section-header {
+  padding-top: 97px;
+
+}
+.our-services__menu {
+  padding-top: 100px;
+  padding-left: 0;
+}
+.our-services__menu-item {
+  width: 189px;
+  position: relative;
+  cursor: pointer;
+}
+.our-services__menu-item .active {
+  background-color: #18cfab;
+}
+.our-services__menu-item .active::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 45%;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #18cfab;
+}
