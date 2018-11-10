@@ -70,36 +70,36 @@ gulp.task('copy-css', ['minify-css'], () => {
 });
 
 // tasks for JS files
-//
-// gulp.task('clean-js', () => {
-//     return gulp.src('./src/js/script.js', {read: false})
-//         .on('error', function (err) {
-//             console.log(err.toString());
-//             this.emit('end');
-//         })
-//         .pipe(clean());
-// });
-//
-// gulp.task('concat-js', ['clean-js'], () => {
-//     return gulp.src('./src/js/**/*.js')
-//         .pipe(concat('script.js'))
-//         .pipe(gulp.dest('./src/js/'));
-// });
-//
-// gulp.task('minify-js', ['concat-js'], (cb) => {
-//     pump([
-//             gulp.src('./src/js/script.js'),
-//             uglify(),
-//             gulp.dest('./src/js/')
-//         ],
-//         cb
-//     );
-// });
-//
-// gulp.task('copy-js', ['minify-js'], () => {
-//     return gulp.src('./src/js/script.js')
-//         .pipe(gulp.dest('./dist/js/'))
-// });
+
+gulp.task('clean-js', () => {
+    return gulp.src('./src/js/script.js', {read: false})
+        .on('error', function (err) {
+            console.log(err.toString());
+            this.emit('end');
+        })
+        .pipe(clean());
+});
+
+gulp.task('concat-js', ['clean-js'], () => {
+    return gulp.src('./src/js/**/*.js')
+        .pipe(concat('script.js'))
+        .pipe(gulp.dest('./src/js/'));
+});
+
+gulp.task('minify-js', ['concat-js'], (cb) => {
+    pump([
+            gulp.src('./src/js/script.js'),
+            uglify(),
+            gulp.dest('./src/js/')
+        ],
+        cb
+    );
+});
+
+gulp.task('copy-js', ['minify-js'], () => {
+    return gulp.src('./src/js/script.js')
+        .pipe(gulp.dest('./dist/js/'))
+});
 
 // tasks for images
 
