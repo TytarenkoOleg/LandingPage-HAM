@@ -1,3 +1,19 @@
 .section-header {
   padding-top: 84px;
 }
+
+.breaking-news__imagesection {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 105px;
+}
+
+.breaking-news__imagesblock {
+  padding: 12px 12px;
+  position: relative;
+  text-decoration: none;
+}
+
+.breaking-news-imagesblock:hover .breaking-news-imagesblock__date {
+  background-color: #18cfab;
+}
