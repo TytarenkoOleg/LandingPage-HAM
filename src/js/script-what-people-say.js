@@ -1,4 +1,5 @@
 //for Carusel - Slider Syncing - http://kenwheeler.github.io/slick/
+
 $(document).ready(function () {
     $('.what-people-say__slider-for').slick({
         slidesToShow: 1,
