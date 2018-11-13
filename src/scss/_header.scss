@@ -1,46 +1,13 @@
-.section-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 0;
-}
-
-.section-header__text {
-  position: relative;
-  margin: 0;
-  font-size: 36px;
-  padding-top: 90px;
-  font-weight: 400;
-}
-
-.section-header__text::before {
-  content: "";
-  position: absolute;
-  top: 158px;
-  left: 43%;
-  background-color: #18cfab;
-  width: 77px;
-  height: 2px;
-}
-
-.section-header__text::after {
-  content: "";
-  position: absolute;
-  top: 164px;
-  left: 46%;
-  background-color: #18cfab;
-  width: 77px;
-  height: 2px;
-}
 
 /*section home*/
-.home {
+
+.section-we-are-creative {
   height: 1012px;
-  background-size: cover;
-  background: url("../images/section_home.jpg") no-repeat fixed center;
+  background: url("../img/home/section_home.jpg") no-repeat fixed top;
+  background-color: black
 }
 
-.header {
+.container_header {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -49,24 +16,25 @@
   background-color: rgba(73, 71, 63, .6);
 }
 
-.container_header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  width: 100%;
-  max-width: 1160px;
-  margin: 0 auto;
-}
+//.container_header {
+//  display: flex;
+//  flex-direction: row;
+//  align-items: center;
+//  width: 100%;
+//  max-width: 1160px;
+//  margin: 0 auto;
+//}
 
-.hexagon__block {
+.section-we-are-creative__hexagon-block {
   display: flex;
   flex-direction: row;
   align-items: center;
   text-decoration: none;
   color: #ffffff;
+  z-index: 100;
 }
 
-.hexagon {
+.section-we-are-creative__hexagon {
   margin: 20px 8px 20px 0px;
   width: 100px;
   height: 55px;
@@ -74,8 +42,8 @@
   position: relative;
 }
 
-.hexagon:before,
-.hexagon:after {
+.hsection-we-are-creative__hexagon:before,
+.section-we-are-creative__hexagon:after {
   content: "";
   width: 0;
   height: 0;
@@ -85,29 +53,29 @@
   border-right: 50px solid transparent;
 }
 
-.hexagon:before {
+.section-we-are-creative__hexagon:before {
   top: -25px;
   border-bottom: 25px solid #18cfab;
 }
 
-.hexagon:after {
+.section-we-are-creative__hexagon:after {
   bottom: -25px;
   border-top: 25px solid #18cfab;
 }
 
-.text_in_hexagon {
+.section-we-are-creative__hexagon-text {
   text-transform: uppercase;
   font-weight: 700;
   text-align: center;
   font-size: 50px;
 }
 
-.text_after_hexagon {
+.section-we-are-creative__text-after-hexagon {
   display: inherit;
   font-size: 40px;
 }
 
-.text_after_hexagon_green {
+.section-we-are-creative__text-after-hexagon-green {
   display: inline-block;
   color: #18cfab;
   text-transform: capitalize;
@@ -121,7 +89,7 @@
   position: relative;
 }
 
-.navbar-nav_links {
+.navbar-nav-links {
   position: relative;
   color: #b8b8b8;
   text-transform: uppercase;
@@ -133,7 +101,7 @@
   margin-right: 17px;
 }
 
-.navbar-nav_links:hover::after {
+.navbar-nav-links:hover::after {
   content: '';
   width: 100%;
   left: 0;
@@ -143,11 +111,11 @@
   border-bottom: 2px solid #18cfab;
 }
 
-.navbar-nav_links:hover {
+.navbar-nav-links:hover {
   color: #18cfab;
 }
 
-.header__text {
+.section-we-are-creative__text {
   margin-top: 246px;
   text-align: center;
   text-transform: uppercase;
@@ -155,20 +123,20 @@
   font-weight: 700;
 }
 
-.header__text_first_line {
+.section-we-are-creative__text-first-line {
   font-size: 35px;
 }
 
-.header__text_first_line_green {
+.section-we-are-creative__text-first-line-green {
   color: #18cfab;
 }
 
-.header__text_second_line {
+.section-we-are-creative__text-second-line {
   font-size: 79px;
   margin-top: 45px;
 }
 
-.header__text_third_line {
+.section-we-are-creative__text-third-line {
   font-size: 34px;
   color: #d4d4d4;
   text-transform: capitalize;
@@ -176,37 +144,8 @@
   margin-top: 37px;
 }
 
-.btn {
+.section-we-are-creative__btn-block {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-.btn_btn1 {
-  padding: 26px 31px;
-  background-color: #18cfab;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-  border-radius: 4px;
-  font-weight: 700;
-  margin-top: 146px;
-  border-top: 5px solid #ffffff;
-  margin-bottom: 244px;
-}
-
-.btn_btn2 {
-  background-color: #00cbf6;
-  margin-left: 28px;
-  padding: 26px 26px;
-  text-decoration: none;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-  border-radius: 4px;
-  font-weight: 700;
-  margin-top: 146px;
-  border-top: 5px solid #ffffff;
-  margin-bottom: 244px;
 }
