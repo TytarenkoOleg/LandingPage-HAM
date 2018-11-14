@@ -1,6 +1,6 @@
 // Code for modal window
 // When the user clicks on the purchase button, open the modal
-console.log("enter to module");
+// console.log("enter to module");
 
 // Get the modal
 var modal = document.getElementById('myModal');
