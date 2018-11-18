@@ -12,13 +12,14 @@ $(document).ready(function () {
 
 $('.what-people-say__slider-nav').slick({
     slidesToShow: 4,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
     asNavFor: '.what-people-say__slider-for',
     dots: false,
     arrows: true,
     centerMode: true,
     focusOnSelect: true,
     centerPadding: 30,
+    // transform: scale(2),
     nextArrow: '<i class="fas fa-arrow-circle-right"></i>',
     prevArrow: '<i class="fas fa-arrow-circle-left"></i>',
     // prevArrow: $('.prev'),
