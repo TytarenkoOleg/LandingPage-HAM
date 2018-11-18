@@ -26,6 +26,8 @@
   font-size: 16px;
   font-weight: 300;
   line-height: 30px;
+  display: block;
+  height: 45px;
 }
 
 .what-people-say__photo-name {
@@ -73,28 +75,36 @@
 
 .what-people-say__slider-nav {
   width: 500px;
+  margin: 0 auto;
 }
 
 .what-people-say__bottom-photo {
   display: inline-block;
-  margin-top: 60px;
   width: 59px;
   height: 59px;
   border-radius: 50%;
   background-color: rgba(31, 218, 181, .2);
   overflow: hidden;
   cursor: pointer;
+  margin: 60px auto 0 auto;
   /*transition: all 500ms ease-in-out;*/
 }
 
 .fas.fa-arrow-circle-right.slick-arrow {
   top: 80px;
-  left: 486px;
+  left: 485px;
   position: absolute;
 }
 
 .fas.fa-arrow-circle-left.slick-arrow {
   top: 80px;
-  left: -90px;
+  left: 0;
   position: absolute;
+}
+
+.fas.fa-arrow-circle-right.slick-arrow:active{
+  color: #18cfab;
+}
+.fas.fa-arrow-circle-left.slick-arrow:active{
+  color: #18cfab;
 }

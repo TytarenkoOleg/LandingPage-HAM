@@ -12,7 +12,7 @@ $(document).ready(function () {
 
 $('.what-people-say__slider-nav').slick({
     slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToScroll: 2,
     asNavFor: '.what-people-say__slider-for',
     dots: false,
     arrows: true,
@@ -24,4 +24,5 @@ $('.what-people-say__slider-nav').slick({
     // prevArrow: $('.prev'),
     // nextArrow: $('.next'),
     // accessibility: true
+
 });
