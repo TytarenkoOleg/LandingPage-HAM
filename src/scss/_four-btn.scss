@@ -1,0 +1,47 @@
+.four-btn {
+  display: flex;
+  flex-direction: row;
+  height: 374px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.four-btn__block {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.four-btn__block-odd {
+  background-color: #1c2a33;
+  border-top: 7px solid #18cfab;
+}
+
+.four-btn__block-even {
+  background-color: #18cfab;
+  border-top: 7px solid #1c2a33;
+}
+
+.four-btn__icon-odd {
+  margin-bottom: 48px;
+}
+
+.four-btn__icon-even {
+  margin-bottom: 59px;
+}
+
+.four-btn__block-odd-text {
+  text-decoration: none;
+  color: #18cfab;
+}
+
+.four-btn__block-even-text {
+  text-decoration: none;
+  color: #ffffff;
+}
