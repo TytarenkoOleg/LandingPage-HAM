@@ -2,6 +2,7 @@
   "name": "landingpage-ham",
   "version": "1.0.0",
   "description": "",
+<<<<<<< HEAD
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,6 +20,14 @@
   "devDependencies": {
     "browser-sync": "^2.26.3",
     "gulp": "^3.9.1",
+=======
+  "main": "gulpfile.js",
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+>>>>>>> 9ed94ffc6d89d51839a1490fa682bc231ca73f70
     "gulp-autoprefixer": "^6.0.0",
     "gulp-clean": "^0.4.0",
     "gulp-clean-css": "^3.10.0",
