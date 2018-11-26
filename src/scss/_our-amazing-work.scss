@@ -1,11 +1,15 @@
-.our_amazing_work {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.our-amazing-work .section-header__text{
+  padding-top: 97px;
 }
 
-.menu {
+//.our_amazing_work {
+//  display: flex;
+//  flex-direction: column;
+//  justify-content: center;
+//  align-items: center;
+//}
+//
+.our-amazing-work__menu {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -15,7 +19,7 @@
   box-sizing: border-box;
   padding: 0;
 }
-
+//
 .our_amazing_work .links {
   display: block;
   position: relative;
@@ -27,12 +31,12 @@
   color: #717171;
   outline: 1px solid darkgrey;
 }
-
+//
 .our_amazing_work .links:hover {
   color: #18cfab;
   cursor: pointer;
 }
-
+//
 .our_amazing_work .links:hover::before {
   content: '';
   width: 100%;
@@ -41,19 +45,19 @@
   top: -3px;
   border-bottom: 3px solid #18cfab;
 }
-
-.our_amazing_work_images {
+//
+.our-amazing-work__block-images {
   display: flex;
   flex-wrap: wrap;
   margin-top: 71px;
 }
 
-.our_amazing_work_img-item {
+.our-amazing-work__image {
   position: relative;
   display: none;
 }
 
-.our_amazing_work_hover {
+.our-amazing-work__image-back-side {
   position: absolute;
   width: 284px;
   height: 206px;
@@ -70,42 +74,42 @@
   transition: 0.4s;
 }
 
-.our_amazing_work_img-item:hover .our_amazing_work_hover {
+.our-amazing-work__image:hover .our-amazing-work__image-back-side {
   opacity: 1;
 }
 
-. our_amazing_work_hover_img {
+. our-amazing-work__image-back-side-img {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.img_eclipse_first {
+.img-eclipse-first {
   position: relative;
   margin-left: 100px;
 }
 
-.img_in_eclipse_first {
+.img-in-eclipse-first {
   position: absolute;
   margin-left: -73px;
   margin-top: 14px;
 }
 
-.img_eclipse_second {
+.img-eclipse-second {
   position: relative;
 }
 
-.img_in_eclipse_second {
+.img-in-eclipse-second {
   position: absolute;
   margin-left: -26px;
   margin-top: 17px;
 }
 
-.our_amazing_work_hover_text {
+.our-amazing-work__image-back-side-text {
   margin: 34px auto 0;
 }
 
-.img-hover_header_text {
+.back-side-text-first {
   color: #18cfab;
   font-size: 14px;
   font-weight: 700;
@@ -115,7 +119,7 @@
   padding: 0;
 }
 
-.img-hover_text {
+.back-side-text-second {
   color: #8a8a8a;
   font-size: 12px;
   font-weight: 300;
