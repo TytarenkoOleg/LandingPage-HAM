@@ -1,15 +1,13 @@
 .what-people-say {
   margin-top: 132px;
-  background-size: cover;
   text-align: center;
   height: 852px;
-  width: 100vw;
-  background: url("../img/what-people-say/what_people_say.jpg") fixed center;
+  background: url("../img/what-people-say/what_people_say.jpg") round fixed;
 }
 
 .what-people-say .section {
   color: #fff;
-  padding-top: 99px;
+  padding-top: 90px;
 }
 
 .what-people-say__quarters {
@@ -21,11 +19,22 @@
   color: #bbbbbb;
 }
 
+//.what-people-say__photo-block{
+//  margin-bottom: 70px;
+//  position: relative;
+//}
+//
 .what-people-say__photo-block-text {
+  //  padding-top: 43px;
   text-align: center;
+  line-height: 30px;
+  height: 45px;
+  //  padding-bottom: 43px;
+  //  color:  #bbbbbb;
   font-size: 16px;
   font-weight: 300;
-  line-height: 30px;
+  //  width: 1100px;
+  //  word-wrap: break-word;
 }
 
 .what-people-say__photo-name {
@@ -34,9 +43,11 @@
   font-weight: 700;
   text-align: center;
   line-height: 27px;
-  margin-top: 43px
+  margin-top: 63px;
+
 }
 
+//
 .what-people-say__photo-position {
   font-size: 13px;
   font-weight: 300;
@@ -49,7 +60,8 @@
   width: 130px;
   height: 130px;
   border: 6px solid rgba(31, 218, 181, .2);
-  margin: 27px auto 0 auto;
+  margin: 23px auto 0 auto;
+
 }
 
 .what-people-say__photo-image-border-two {
@@ -60,41 +72,79 @@
   height: 100%;
   border: 3px solid #18cfab;
   overflow: hidden;
-  /*background-color: white;*/
-  /*opacity: 1;*/
 }
 
 .what-people-say__photo-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 1;
 }
 
 .what-people-say__slider-nav {
-  width: 500px;
+  width: 350px;
+  margin: 20px auto 0 auto;
 }
 
 .what-people-say__bottom-photo {
-  display: inline-block;
-  margin-top: 60px;
-  width: 59px;
-  height: 59px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+}
+
+.what-people-say__bottom-photo-border-one {
   border-radius: 50%;
-  background-color: rgba(31, 218, 181, .2);
+  width: 25%;
+  height: 60px;
+  border: 3px solid transparent;
+  margin: 27px auto 0 auto;
+}
+
+.what-people-say__bottom-photo-border-two:before {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid rgba(31, 218, 181, .2);
+  margin-left: -33px;
+  margin-top: -4px;
+}
+
+.what-people-say__bottom-photo-border-two {
+  display: block;
+  box-sizing: border-box;
+  border-radius: 50%;
+  max-width: 60px;
+  height: 60px;
+  border: 1px solid #18cfab;
   overflow: hidden;
-  cursor: pointer;
-  /*transition: all 500ms ease-in-out;*/
+  margin: 0 auto;
+}
+
+.slick-center{
+  transform: scale(1.4);
+  height: 75px;
+  //margin-left: 7px;
 }
 
 .fas.fa-arrow-circle-right.slick-arrow {
-  top: 80px;
-  left: 486px;
+  top: 59px;
+  left: 367px;
   position: absolute;
 }
 
 .fas.fa-arrow-circle-left.slick-arrow {
-  top: 80px;
-  left: -90px;
+  top: 59px;
+  left: -34px;
   position: absolute;
 }
+
+.fas.fa-arrow-circle-right.slick-arrow:active {
+  color: #18cfab;
+}
+
+.fas.fa-arrow-circle-left.slick-arrow:active {
+  color: #18cfab;
+}
+

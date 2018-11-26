@@ -7,7 +7,7 @@
   top: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+  background-color: rgba(0, 0, 0, 0.4);
   font-family: 'Montserrat', sans-serif;
 
 }
@@ -42,28 +42,38 @@
   margin-bottom: 27px;
 }
 
-.modal__content-left-email {
+.modal__content-left-input{
   display: block;
-  margin-top: 23px;
   height: 47px;
   width: 100%;
   padding-left: 16px;
   box-sizing: border-box;
 }
-#icon-email{
-  background-image: url("../img/modal-window/email.png");
-  background-repeat: no-repeat;
-  background-position: 100% 50%;
 
+.modal__content-left-email {
+  margin-top: 23px;
+  background: url("../img/modal-window/email.png") no-repeat 96% 50%;
+}
+
+input[type="email"]::-webkit-input-placeholder {
+  color: #b6b6b6;
+}
+
+input[type="email"]::-moz-placeholder {
+  color: #b6b6b6;
 }
 
 .modal__content-left-password {
-  display: block;
   margin-top: 22px;
-  height: 47px;
-  width: 100%;
-  padding-left: 16px;
-  box-sizing: border-box;
+  background: url("../img/modal-window/lock.jpg") no-repeat 96% 50%;
+}
+
+input[type="password"]::-webkit-input-placeholder {
+  color: #b6b6b6;
+}
+
+input[type="password"]::-moz-placeholder {
+  color: #b6b6b6;
 }
 
 .modal__content-left-btn {
@@ -82,17 +92,36 @@
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-}
-.modal__content-left-checkblock label{
-  display: flex;
   align-items: center;
 }
-.modal__content-left-chkbox {
-  float: left;
-  font-size: 17px;
-  margin-right: 11px;
-  }
 
+.modal__content-left-checkblock label {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+label input {
+  display: none;
+}
+label span {
+  height: 16px;
+  width: 16px;
+  border: 1px solid gray;
+  display: inline-block;
+  position: relative;
+  background-color:#FFF;
+  border-radius:2px;
+  margin-right: 11px;
+}
+[type=checkbox]:checked + span:before {
+  content: '\2714';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  font-size:20px;
+  color:green;
+}
 
 .modal__content-left-forgot {
   float: right;
@@ -141,35 +170,35 @@
   height: 51px;
   width: 331px;
   color: white;
-  background: no-repeat 5% 50%;
+  background: no-repeat 8% 50%;
 }
 
 .modal__content-right-button.facebook input {
   background-color: #385899;
   background-image: url("../img/modal-window/modal_facebook.png");
   border-radius: 5px;
-
+  padding-left: 21%;
 }
 
 .modal__content-right-button.twitter input {
   background-color: #43b1e4;
   background-image: url("../img/modal-window/modal_bird.png");
   border-radius: 5px;
-
+  padding-left: 21%;
 }
 
 .modal__content-right-button.google input {
   background-color: #df4b31;
   background-image: url("../img/modal-window/modal_g+.png");
   border-radius: 5px;
-
+  padding-left: 21%;
 }
 
 .modal__content-right-colour-box {
   position: absolute;
   top: 3px;
   left: 3px;
-  width: 47px;
+  width: 64px;
   height: 47px;
   background-color: black;
   opacity: 0.15;
