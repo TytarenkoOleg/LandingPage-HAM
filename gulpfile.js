@@ -5,7 +5,7 @@ let gulp = require('gulp'),
     concat = require('gulp-concat'),
     cleanCSS = require('gulp-clean-css'),
     pump = require('pump'),
-    uglify = require('gulp-uglify'),
+    uglify = require('gulp-uglify-es').default,
     imagemin = require('gulp-imagemin'),
     clean = require('gulp-clean');
 
