@@ -4,7 +4,7 @@ $(document).ready(function () {
         let category = $(this).attr("data-info");
         $(".our-amazing-work__image").hide();
         $(".our-amazing-work__image[data-info=" + category + "]").show();
-        if (category == 'all_images') {
+        if (category == "all_images") {
             $(".our-amazing-work__block-images .our-amazing-work__image").slice(0, 36).show();
         }
     });
